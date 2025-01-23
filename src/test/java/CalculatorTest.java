@@ -35,13 +35,16 @@ public class CalculatorTest {
 
     @Test
     public void divideByZero(){
-        Integer result = null;
-        try{
-            result = underTest.divide(6,0);
-        } catch (ArithmeticException e){
-            // Division by zero occurred
-        }
-        assertNull(result);
+//        Integer result = null;
+//        try{
+//            result = underTest.divide(6,0);
+//        } catch (ArithmeticException e){
+//            // Division by zero occurred
+//        }
+//        assertNull(result, "Division by zero results in a null value");
+
+        ArithmeticException e = assertThrows(ArithmeticException.class, () -> underTest.divide(10,0));
+        assertEquals("/ by zero", e.getMessage());
     }
 
     @Test
