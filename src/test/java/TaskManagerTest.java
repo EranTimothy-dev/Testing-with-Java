@@ -9,7 +9,7 @@ public class TaskManagerTest {
     @Test
     public void addTask(){
         TaskManager taskManager = new TaskManager();
-        Task task = new Task();
+        Task task = new Task("workout chest");
         taskManager.add(task);
 
         assertTrue(taskManager.exists(task.getId()));
@@ -18,8 +18,8 @@ public class TaskManagerTest {
     @Test
     public void addTask_duplicateTasks(){
         TaskManager taskManager = new TaskManager();
-        Task task1 = new Task();
-        Task task2 = new Task();
+        Task task1 = new Task("Make presentation");
+        Task task2 = new Task("Make video");
 
         taskManager.add(task1);
         taskManager.add(task2);
@@ -32,7 +32,7 @@ public class TaskManagerTest {
     @Test
     public void removeTask(){
         TaskManager taskManager = new TaskManager();
-        Task task = new Task();
+        Task task = new Task("Clean kitchen");
         taskManager.add(task);
         int preTaskCount = taskManager.count();
 
