@@ -6,6 +6,10 @@ import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
 
 public class EnvironmentVariableTests {
 
+    /**
+     * run tests based on the environment variable also a form of conditional execution
+     * */
+
     @Test
     @EnabledIfEnvironmentVariable(named = "ENVIRONMENT", matches = "development")
     void developmentEnvironment() {
