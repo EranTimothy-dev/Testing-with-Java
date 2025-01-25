@@ -19,4 +19,7 @@ public class Task {
         return description;
     }
 
+    public String setDescription(String desc){
+        return description = desc;
+    }
 }
