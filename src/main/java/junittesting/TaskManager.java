@@ -15,6 +15,9 @@ public class TaskManager {
         tasks.put(task.getId(),task);
     }
 
+    public Task get(int id) {
+        return tasks.get(id);
+    }
 
     public boolean exists(int taskId){
         return tasks.containsKey(taskId);

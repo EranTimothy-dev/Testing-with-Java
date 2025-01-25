@@ -1,38 +1,45 @@
 import junittesting.Task;
 import junittesting.TaskManager;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskManagerTest {
 
+    private TaskManager taskManager;
+    private Task task;
+
+    @BeforeEach
+    void setup(){
+        taskManager = new TaskManager();
+        task = new Task("Read a book");
+        assertEquals(0,taskManager.count());
+    }
+
+
     @Test
     public void addTask(){
-        TaskManager taskManager = new TaskManager();
-        Task task = new Task("workout chest");
         taskManager.add(task);
 
         assertTrue(taskManager.exists(task.getId()));
+        assertEquals(1, taskManager.count());
     }
 
     @Test
     public void addTask_duplicateTasks(){
-        TaskManager taskManager = new TaskManager();
         Task task1 = new Task("Make presentation");
-        Task task2 = new Task("Make video");
 
         taskManager.add(task1);
-        taskManager.add(task2);
+        taskManager.add(task);
         assertTrue(taskManager.exists(task1.getId()));
-        assertTrue(taskManager.exists(task2.getId()));
+        assertTrue(taskManager.exists(task.getId()));
         assertEquals(2,taskManager.count());
     }
 
 
     @Test
     public void removeTask(){
-        TaskManager taskManager = new TaskManager();
-        Task task = new Task("Clean kitchen");
         taskManager.add(task);
         int preTaskCount = taskManager.count();
 
@@ -42,5 +49,13 @@ public class TaskManagerTest {
         assertEquals(preTaskCount-1,taskManager.count());
     }
 
+    @Test
+    public void getTask(){
+        taskManager.add(task);
+
+        Task result = taskManager.get(task.getId());
+
+        assertEquals(task,result);
+    }
 
 }
