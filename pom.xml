@@ -62,7 +62,43 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.2</version>
             </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.12</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+<!--                            <excludes>-->
+<!--                                <exclude>com/app/test/**</exclude> &lt;!&ndash; packages or files to be excluded from the checked code coverage such as test or config files &ndash;&gt;-->
+<!--                            </excludes>-->
+                            <rules>
+                                <rule>
+                                    <element>BUNDLE</element> <!-- bundle refers to the whole project(jar), other options include package, source file, methods -->
+                                    <limits> <!-- limits define the coverage that must be met -->
+                                        <limit>
+                                            <counter>INSTRUCTION</counter> <!-- the type of coverage to be measured, other options include  branch, line, method, and class -->
+                                            <value>COVEREDRATIO</value> <!-- defines the metrix type for the limit, defines the ratio of covered and not-covered elements -->
+                                            <minimum>0.90</minimum> <!-- minimum percentage that should be covered by the tests, build will fail if it is less -->
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
 </project>
