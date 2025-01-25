@@ -1,0 +1,1 @@
+# Check the pom.xml to see how to configure JaCoCo to check test coverage
