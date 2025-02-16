@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.lifecyclehooks;
 
 import java.util.HashMap;
 import java.util.Map;
