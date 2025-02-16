@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.testexecutionmethods;
 
 public class User {
 

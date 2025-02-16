@@ -1,4 +1,6 @@
-import junittesting.SystemInfo;
+package testexecutionmethods;
+
+import junittesting.testexecutionmethods.SystemInfo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnJre;
 import org.junit.jupiter.api.condition.EnabledOnOs;

@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.testexecutionmethods;
 
 import java.util.HashMap;
 import java.util.Map;

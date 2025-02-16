@@ -1,5 +1,7 @@
-import junittesting.User;
-import junittesting.UserService;
+package testexecutionmethods;
+
+import junittesting.testexecutionmethods.User;
+import junittesting.testexecutionmethods.UserService;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
