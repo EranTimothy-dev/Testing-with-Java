@@ -1,5 +1,6 @@
 # Testing Java Applications with JUnit and Mockito
 ## Check the pom.xml to see how to configure JaCoCo to check test coverage
+### Example exercises are available in separate branches for better clarity on certain topics
 
 This repo contains code examples for various testing methodologies using two of javas
 most popular testing libraries, JUnit and Mockito.
