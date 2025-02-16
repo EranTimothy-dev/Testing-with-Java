@@ -1,5 +1,6 @@
-import junittesting.UserRole;
-import org.junit.jupiter.api.Test;
+package ParameterizedTests;
+
+import junittesting.ParameterizedTests.UserRole;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 

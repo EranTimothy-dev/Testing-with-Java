@@ -1,5 +1,6 @@
-import junittesting.TemperatureConverter;
-import org.junit.jupiter.api.Test;
+package ParameterizedTests;
+
+import junittesting.ParameterizedTests.TemperatureConverter;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

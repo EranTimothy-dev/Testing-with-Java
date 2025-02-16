@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.ParameterizedTests;
 
 public enum UserRole {
 
