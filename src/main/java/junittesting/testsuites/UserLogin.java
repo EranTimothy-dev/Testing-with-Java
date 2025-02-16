@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.testsuites;
 
 import java.util.HashMap;
 import java.util.Map;

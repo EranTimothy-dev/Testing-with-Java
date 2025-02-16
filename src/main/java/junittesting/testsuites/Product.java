@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.testsuites;
 
 public class Product {
 

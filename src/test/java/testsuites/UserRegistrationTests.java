@@ -1,4 +1,6 @@
-import junittesting.UserRegistration;
+package testsuites;
+
+import junittesting.testsuites.UserRegistration;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
