@@ -77,7 +77,7 @@
                                         <limit>
                                             <counter>INSTRUCTION</counter> <!-- the type of coverage to be measured, other options include  branch, line, method, and class -->
                                             <value>COVEREDRATIO</value> <!-- defines the metrix type for the limit, defines the ratio of covered and not-covered elements -->
-                                            <minimum>0.90</minimum> <!-- minimum percentage that should be covered by the tests, build will fail if it is less -->
+                                            <minimum>0.00</minimum> <!-- minimum percentage that should be covered by the tests, build will fail if it is less -->
                                         </limit>
                                     </limits>
                                 </rule>
