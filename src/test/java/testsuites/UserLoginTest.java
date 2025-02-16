@@ -1,4 +1,6 @@
-import junittesting.UserLogin;
+package testsuites;
+
+import junittesting.testsuites.UserLogin;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

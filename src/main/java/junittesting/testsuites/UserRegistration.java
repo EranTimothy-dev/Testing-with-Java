@@ -1,4 +1,4 @@
-package junittesting;
+package junittesting.testsuites;
 
 import java.util.ArrayList;
 import java.util.List;
