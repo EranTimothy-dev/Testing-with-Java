@@ -37,7 +37,7 @@ Replace `shouldLoginSuccessfully` with the actual method name.
 
 ## 📌 Passing Environment Variables
 
-### **Linux/macOS:**
+### **Linux/macOS (bash):**
 Using inline environment variables:
 ```bash
 MY_ENV_VAR=value mvn test -Dtest=testsuites.UserLoginTest
