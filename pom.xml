@@ -37,7 +37,13 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-engine</artifactId>
-            <version>1.11.3</version>
+            <version>1.10.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.11.4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -77,7 +83,7 @@
                                         <limit>
                                             <counter>INSTRUCTION</counter> <!-- the type of coverage to be measured, other options include  branch, line, method, and class -->
                                             <value>COVEREDRATIO</value> <!-- defines the metrix type for the limit, defines the ratio of covered and not-covered elements -->
-                                            <minimum>0.00</minimum> <!-- minimum percentage that should be covered by the tests, build will fail if it is less -->
+                                            <minimum>0.10</minimum> <!-- minimum percentage that should be covered by the tests, build will fail if it is less -->
                                         </limit>
                                     </limits>
                                 </rule>
