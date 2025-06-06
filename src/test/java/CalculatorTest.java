@@ -1,11 +1,11 @@
-import Extensions.TimingExtension;
+import extensions.TimingExtensionTest;
 import junittesting.Calculator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(TimingExtension.class)
+@ExtendWith(TimingExtensionTest.class)
 public class CalculatorTest {
 
     // setup calculator

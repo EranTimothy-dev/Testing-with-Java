@@ -1,6 +1,7 @@
 package testsuites;
 
 import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.SelectPackages;
 import org.junit.platform.suite.api.Suite;
 
 @Suite
@@ -8,6 +9,6 @@ import org.junit.platform.suite.api.Suite;
         UserRegistrationTests.class,
         UserLoginTest.class
 })
-//@SelectPackages("com.package.testpackage")
+@SelectPackages("testsuites")
 public class UserTestSuite {
 }

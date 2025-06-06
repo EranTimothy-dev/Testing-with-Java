@@ -1,4 +1,4 @@
-package ParameterizedTests;
+package parameterizedtests;
 
 import junittesting.ParameterizedTests.TemperatureConverter;
 import org.junit.jupiter.params.ParameterizedTest;

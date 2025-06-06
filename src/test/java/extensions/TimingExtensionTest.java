@@ -1,4 +1,4 @@
-package Extensions;
+package extensions;
 
 import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
 import org.junit.jupiter.api.extension.BeforeTestExecutionCallback;
@@ -6,8 +6,8 @@ import org.junit.jupiter.api.extension.ExtensionContext;
 
 import java.util.logging.Logger;
 
-public class TimingExtension implements BeforeTestExecutionCallback, AfterTestExecutionCallback {
-    public static final Logger logger = Logger.getLogger(TimingExtension.class.getName());
+public class TimingExtensionTest implements BeforeTestExecutionCallback, AfterTestExecutionCallback {
+    public static final Logger logger = Logger.getLogger(TimingExtensionTest.class.getName());
 
     @Override
     public void afterTestExecution(ExtensionContext context) throws Exception {
