@@ -15,7 +15,8 @@ public class CalculatorTest {
     @Test
     public void testAddition(){
         int result = underTest.add(2,3);
-        assertEquals(5, result);
+        assertEquals(5, result, () -> "The answer is incorrect"); // using message suppliers by making the message
+        // an anonymous function which only creates the message if the test fails, making it more efficient
     }
 
     @Test
